@@ -1,0 +1,112 @@
+body{
+    background-image: url("/assets/main-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Rokkitt', serif;
+    
+}
+
+.imageRights{
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    height: 100%;
+   
+    
+}
+
+.center{
+    padding: 50px;
+    text-align: center;
+    opacity: 0;
+    border-radius: 20px;
+}
+
+#par{
+    font-size: 55px;
+    font-family: 'Rokkitt', serif;
+    align-items: center;
+    
+}
+
+
+
+
+
+.click{
+    font-size: 35px;
+    font-family: 'Rokkitt', serif;
+    text-decoration: none;
+    color: black;
+   
+}
+
+#click{
+    border: 1px double black;
+    background-color: #FFCE45;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0;
+    margin-left: 10px;
+    width: 150px;
+}
+
+
+
+
+@media all and (max-width: 500px) {
+  
+  .container{
+    flex-direction: column;
+  }
+  
+    #click{
+        font-size: 14px;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 20px;
+        margin-left: 5px;
+        
+        
+    }
+
+    #par{
+        font-size: 40px;
+    }
+  
+ 
+   
+
+}
+
+@media all and (max-width: 280px) {
+  
+  .container{
+    flex-direction: column;
+  }
+  
+  
+    #click{
+        font-size: 14px;
+        font-weight: bolder;
+        padding: 10px;
+        border-radius: 20px;
+        margin-left: 5px;
+        
+        
+    }
+
+    #par{
+        font-size: 40px;
+    }
+  
+   
+   
+
+}
