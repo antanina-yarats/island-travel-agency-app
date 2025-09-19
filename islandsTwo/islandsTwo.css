@@ -53,90 +53,52 @@ button:hover{
     height: 100%;
 }
 
-.boxOne {
-    width: 500px;
-    height: 500px;
-    border: 3px solid #062a50;
-    margin: 10px;
-    position: relative;
-    cursor: pointer;
+.boxOne, .boxTwo, .boxThree, .boxFour {
+  width: min(90vw, 500px);
+  aspect-ratio: 1 / 1;     
+  border: 3px solid #062a50;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
 }
 
-.boxTwo {
-    width: 500px;
-    height: 500px;
-    border: 3px solid #062a50;
-    margin: 10px;
-    position: relative;
-    cursor: pointer;
-}
-
-.boxThree {
-    width: 500px;
-    height: 500px;
-    border: 3px solid #062a50;
-    margin: 10px;
-    position: relative;
-    cursor: pointer;
-}
-
-.boxFour {
-    width: 500px;
-    height: 500px;
-    border: 3px solid #062a50;
-    margin: 10px;
-    position: relative;
-    cursor: pointer;
-}
-
-.transparentOne {
-    background-color: rgba(239, 239, 206, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    text-align: center;
-    word-wrap: break-word;
-}
-
-.link{
-    text-decoration: none;
-    color: #fff;
-}
-
-
-.transparentTwo {
-    background-color: rgba(239, 239, 206, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    text-align: center;
-    word-wrap: break-word;
-}
-
-.transparentThree {
-    background-color: rgba(239, 239, 206, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    text-align: center;
-    word-wrap: break-word;
-}
-
+.transparentOne,
+.transparentTwo,
+.transparentThree,
 .transparentFour {
-    background-color: rgba(239, 239, 206, 0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    text-align: center;
-    word-wrap: break-word;
+  position: absolute;
+  inset: 0;                 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 12px;
+  overflow: hidden; 
+  text-align: center;    
+  align-items: center;         
+}
+
+
+.transparentOne p,
+.transparentTwo p,
+.transparentThree p,
+.transparentFour p {
+  margin: 0 0 8px;
+  line-height: 1.3;
+  width: 100%;  
+}
+
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #005299;
+  padding: 8px 12px;
+  border-radius: 4px;
+  align-self: center; 
+  text-align: center;
 }
 
 
@@ -161,30 +123,7 @@ button:hover{
 }
 
 @media all and (max-width: 500px){
-    .boxOne {
-        width: 300px;
-        height: 300px;
-       
-    }
     
-    .boxTwo {
-        width: 300px;
-        height: 300px;
-       
-    }
-    
-    .boxThree {
-        width: 300px;
-        height: 300px;
-        
-    }
-    
-    .boxFour {
-        width: 300px;
-        height: 300px;
-       
-    }
-
     p{
         padding: 3px;
         font-size: 15px;
@@ -194,32 +133,8 @@ button:hover{
 }
 
 @media all and (max-width: 280px){
-    .boxOne {
-        width: 300px;
-        height: 370px;
-       
-    }
     
-    .boxTwo {
-        width: 300px;
-        height: 357px;
-       
-    }
-    
-    .boxThree {
-        width: 300px;
-        height: 357px;
-        
-    }
-    
-    .boxFour {
-        width: 300px;
-        height: 357px;
-       
-    }
-
     p{
-        padding: 3px;
         font-size: 15px;
       }
 
